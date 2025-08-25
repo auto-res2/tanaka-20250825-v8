@@ -1,1 +1,12 @@
-# Please list the required python packages.
+torch
+torchvision
+numpy
+pandas
+tqdm
+matplotlib
+seaborn
+accelerate
+diffusers==0.27.2
+torch-fidelity
+pynvml
+pyyaml

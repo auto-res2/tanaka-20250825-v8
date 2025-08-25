@@ -1,0 +1,26 @@
+# Example configuration for a CIFAR-10 head-to-head run on a Tesla T4 16 GB
+experiment: head2head
+
+dataset: cifar10
+# If you have ImageNet-64 or other datasets as ImageFolder, set data_root accordingly
+# data_root: /path/to/imagenet64
+
+image_size: 32
+batch_size: 128
+_eval_batch: 64
+num_samples: 5000
+
+# Training
+epochs: 1
+lr: 0.0002
+base_channels: 128
+lora_rank: 4
+mixed_precision: fp16
+num_workers: 4
+seeds: [0, 1, 2]
+K: 3
+
+# Toggles
+grad_quant: false
+# For hires experiment only
+# test_1024: true
