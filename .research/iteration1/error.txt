@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/runner/work/tanaka-20250825-v8/tanaka-20250825-v8/src/main.py", line 21, in <module>
+    from train import train_pipeline, ModelConfig, TrainConfig, IMAGES_DIR
+  File "/home/runner/work/tanaka-20250825-v8/tanaka-20250825-v8/src/train.py", line 14, in <module>
+    from diffusers import UNet2DModel, DDPMScheduler
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/diffusers/__init__.py", line 5, in <module>
+    from .utils import (
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/diffusers/utils/__init__.py", line 38, in <module>
+    from .dynamic_modules_utils import get_class_from_dynamic_module
+  File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/diffusers/utils/dynamic_modules_utils.py", line 28, in <module>
+    from huggingface_hub import cached_download, hf_hub_download, model_info
+ImportError: cannot import name 'cached_download' from 'huggingface_hub' (/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/huggingface_hub/__init__.py)
